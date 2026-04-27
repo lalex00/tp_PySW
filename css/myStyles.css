@@ -1,0 +1,32 @@
+/* Mega Menu Styles */
+.navbar .dropdown-menu.mega-menu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+.mega-menu .row {
+    margin: 0;
+}
+
+.mega-menu h6 {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.mega-menu .dropdown-item {
+    padding: 5px 0;
+    color: #666;
+    text-decoration: none;
+    display: block;
+}
+
+.mega-menu .dropdown-item:hover {
+    color: #007bff;
+    background-color: transparent;
+}
