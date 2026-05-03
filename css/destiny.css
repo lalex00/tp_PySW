@@ -1,4 +1,4 @@
-@import url('css/myStyles.css');
+@import url('../css/myStyles.css');
 
 @media screen and (min-width: 576px) {
     .row > .dropdown {

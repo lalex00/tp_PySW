@@ -1,0 +1,13 @@
+@import url('../css/myStyles.css');
+.card-body > ul > li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+.card-body > ul {
+    padding: 0;
+    margin: 0;
+}
+#message {
+    margin-top: 0;
+}
