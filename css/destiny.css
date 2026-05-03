@@ -1,0 +1,24 @@
+@import url('css/myStyles.css');
+
+@media screen and (min-width: 576px) {
+    .row > .dropdown {
+        display: none;
+    }
+}
+@media screen and (max-width: 577px) {
+    .btn-group {
+        display: none;
+    }
+}
+.card-text{
+    display: none;
+}
+.card:hover{
+    .card-text{
+        display: block;
+    }
+    .card-img{
+        opacity: 0.5;
+        width: 101%;
+    }
+}

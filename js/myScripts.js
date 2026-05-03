@@ -31,15 +31,23 @@ $(document).ready(function(){
             transform: 'scale(1)'
         }, 300);
     });
-});
-/* counter */
-$('.Count').each(function () {
-  var $this = $(this);
-  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-    duration: 1000,
-    easing: 'swing',
-    step: function () {
-      $this.text(Math.ceil(this.Counter));
-    }
-  });
+
+    /* counter */
+    $('.Count').each(function () {
+    var $this = $(this);
+    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+        $this.text(Math.ceil(this.Counter));
+        }
+    });
+    });
+
+    /*gallery filter*/
+    $('input[type="radio"][name="btnFilter"]').change(function() {
+        var filterValue = $(this).attr('id');
+        $('.col-12 > .card').parent().show();
+        $('.col-12 > .card').not("." + filterValue).parent().hide();
+    });
 });
